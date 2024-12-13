@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat GPT Interface</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Chat GPT Interface</h1>
+
+			<!-- Boutons pour gérer les conversations -->
+			<div class="button-container">
+				<button id="new-conversation-button">Nouvelle</button>
+				<button id="clear-all-button">Tout effacer</button>
+			</div>
+
+			<!-- Liste des boutons de conversation -->
+			<div class="conversation-list">
+				<!-- Liste des boutons de conversation sera insérée ici par JavaScript -->
+			</div>
+
+			<!-- Champ d'input pour la clé API et les messages -->
+			<div class="input-container">
+				<input type="text" id="api-key" placeholder="Entrez votre clé API" />
+				<textarea
+					id="user-input"
+					placeholder="Écrivez votre message ici..."
+				></textarea>
+				<button id="send-button">Envoyer</button>
+				<button id="clear-button">Effacer</button>
+			</div>
+
+			<!-- Zone où les réponses de l'IA apparaissent -->
+			<div id="response" class="response-container"></div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
